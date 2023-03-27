@@ -1,5 +1,5 @@
 # Sacha's nvim quickstart
-> for nvim 9.+
+*for nvim 9.+*
 
 ## Setup
 
