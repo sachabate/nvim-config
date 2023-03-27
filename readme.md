@@ -4,7 +4,7 @@
 ## Setup
 
 ### Ubuntu
-To get started, add the PPA for latest nvim version:
+To get started, add the PPA for latest nvim version, and install:
 ```bash
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
@@ -16,6 +16,11 @@ You can run:
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+And we'll use [Ripgrep](https://github.com/BurntSushi/ripgrep) for fuzzy find:
+```bash
+sudo apt-get install ripgrep
 ```
 
 
