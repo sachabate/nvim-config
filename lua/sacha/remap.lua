@@ -15,3 +15,20 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+local function toggle_cc()
+    local cc = vim.opt.cc:get()
+    if cc[1] == "80" then
+        vim.opt.cc = ""
+    else
+        vim.opt.cc = "80"
+    end
+end
+
+vim.keymap.set("n", "<leader>cc", function()
+    toggle_cc()
+end)
+
+vim.keymap.set("n", "<leader>ln", function()
+    vim.opt.rnu = not(vim.opt.rnu:get())
+end)
