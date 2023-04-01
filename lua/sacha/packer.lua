@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
     }
 
     use({ 'rose-pine/neovim', as = 'rose-pine' })
+    use({'junegunn/seoul256.vim', as = 'seoul256'})
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/nvim-treesitter-context')
