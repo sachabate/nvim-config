@@ -20,8 +20,15 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    -- Colorschemes --
+    use({'rose-pine/neovim', as = 'rose-pine'})
+    use({'catppuccin/nvim', as = 'catppuccin'})
+    use {'embark-theme/vim', as = 'embark'}
     use({'junegunn/seoul256.vim', as = 'seoul256'})
+    use({'nyoom-engineering/oxocarbon.nvim'})
+    use({'navarasu/onedark.nvim'})
+    use({'glepnir/zephyr-nvim'})
+    use({'cpea2506/one_monokai.nvim'})
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/nvim-treesitter-context')
