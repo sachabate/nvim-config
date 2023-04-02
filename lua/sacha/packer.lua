@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    use {'goolord/alpha-nvim'}
+
     -- Colorschemes --
     use({'rose-pine/neovim', as = 'rose-pine'})
     use({'catppuccin/nvim', as = 'catppuccin'})
