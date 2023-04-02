@@ -4,7 +4,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
 	"tsserver",
-	"intelephense",
 	"pyright",
 })
 
