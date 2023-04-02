@@ -19,6 +19,8 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+vim.keymap.set("n", "<C-b>", ":NvimTreeFindFileToggle!<CR>")
+
 local function toggle_cc()
     local cc = vim.opt.cc:get()
     if cc[1] == "80" then
