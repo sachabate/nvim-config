@@ -52,7 +52,10 @@ return require('packer').startup(function(use)
         }
     }
 
-    use {'nvim-lualine/lualine.nvim'}
+    use {
+        'nvim-lualine/lualine.nvim', 
+        requires = { 'nvim-tree/nvim-web-devicons' }
+    }
 
     if packer_bootstrap then 
         require('packer').sync()
