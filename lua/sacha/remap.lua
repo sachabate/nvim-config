@@ -7,6 +7,11 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("i", "<A-o>", "<Esc>o")
 vim.keymap.set("i", "<A-O>", "<Esc>O")
 
+vim.keymap.set("i", "<A-h>", "<Left>")
+vim.keymap.set("i", "<A-j>", "<Down>")
+vim.keymap.set("i", "<A-k>", "<Up>")
+vim.keymap.set("i", "<A-l>", "<Right>")
+
 vim.keymap.set("n", "<C-n>", "<C-d>zz")
 vim.keymap.set("n", "<C-p>", "<C-u>zz")
 
