@@ -34,3 +34,23 @@ cd ~/.config && git clone git@github.com:sachabate/nvim-config.git nvim
 
 
 Party :tada:
+
+## Keybinds
+`<leader>` = ` `
+
+### General / Navigation
+| Mode | Binding | Function |
+| :--: | :-----: | :------- |
+| `n`  | `<C-h>` | Navigate pane left |
+| `n`  | `<C-j>` | Navigate pane down |
+| `n`  | `<C-k>` | Navigate pane up |
+| `n`  | `<C-l>` | Navigate pane right |
+| `n`  | `<C-n>` | Navigate item next |
+| `n`  | `<C-p>` | Navigate item previous |
+| `n`  | `<leader>h` | Find and replace under cursor |
+| `x`  | `<leader>p` | Paste and keep register |
+| `i`  | `<A-h>` | (i) Move cursor left |
+| `i`  | `<A-j>` | (i) Move cursor down |
+| `i`  | `<A-k>` | (i) Move cursor up |
+| `i`  | `<A-l>` | (i) Move cursor right |
+
