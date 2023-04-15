@@ -23,17 +23,45 @@ And we'll use [Ripgrep](https://github.com/BurntSushi/ripgrep) for fuzzy find:
 sudo apt-get install ripgrep
 ```
 
+---
+
+### MacOS
+Start by installing NeoVim:
+```bash
+brew install neovim
+```
+
+We will also need [Packer](https://github.com/wbthomason/packer.nvim).
+You can run:
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+And we'll use [Ripgrep](https://github.com/BurntSushi/ripgrep) for fuzzy find:
+```bash
+brew install ripgrep
+```
+
+You may also need to remap the option key in your terminal.
+
+---
+
+You will also need a font from [Nerd Fonts](https://www.nerdfonts.com/) to 
+display icons in the navbar and tree. If you prefer not to use icons, this can
+also be disabled in the `after/plugin/` config files for `lualine` and 
+`nvim-tree`.
 
 Clone the repo to the .config/nvim directory:
 ```bash
 cd ~/.config && git clone git@github.com:sachabate/nvim-config.git nvim
 ```
 
-
 `nvim nvim/.` and run command `:PackerSync`
 
-
 Party :tada:
+
+---
 
 ## Keybinds
 `<leader>` = ` `
