@@ -1,3 +1,7 @@
+local function some()
+    return '>|' .. vim.api.nvim_get_option('shiftwidth')
+end
+
 require('lualine').setup {
     options = {
         theme = 'auto',
@@ -12,9 +16,9 @@ require('lualine').setup {
                 'filename',
                 path = 0
             }
-        },
-        lualine_x = { 'encoding', 'fileformat' },
-        lualine_y = { 
+},
+        lualine_x = { 'encoding', some },
+        lualine_y = {
             {
                 'filetype',
                 icon = { align = 'right' },
